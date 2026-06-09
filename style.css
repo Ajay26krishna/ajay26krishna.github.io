@@ -25,8 +25,9 @@ p + p {
 }
 
 .hero {
-  min-height: 94vh;
-  padding: 28px 8% 70px;
+  min-height: 92vh;
+  padding: 28px 8% 72px;
+  overflow: hidden;
   background:
     radial-gradient(circle at top left, rgba(59, 130, 246, 0.35), transparent 35%),
     radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.25), transparent 35%),
@@ -38,7 +39,9 @@ p + p {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  margin-bottom: 110px;
+  margin-bottom: 78px;
+  position: relative;
+  z-index: 5;
 }
 
 .logo {
@@ -61,7 +64,51 @@ p + p {
 }
 
 .hero-content {
-  max-width: 980px;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
+  align-items: center;
+  gap: 58px;
+}
+
+.hero-text {
+  min-width: 0;
+  max-width: 760px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: clamp(260px, 29vw, 390px);
+  height: clamp(340px, 38vw, 500px);
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(30, 41, 59, 0.82);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  box-shadow: 0 34px 90px rgba(2, 6, 23, 0.45);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 68% 16%;
 }
 
 .eyebrow,
@@ -82,13 +129,14 @@ p + p {
 }
 
 h1 {
-  font-size: clamp(2.7rem, 7vw, 5.8rem);
-  line-height: 1;
-  margin-bottom: 24px;
+  font-size: clamp(2.45rem, 5.5vw, 5rem);
+  line-height: 1.04;
+  max-width: 900px;
+  margin-bottom: 26px;
 }
 
 .subtitle {
-  max-width: 820px;
+  max-width: 780px;
   font-size: 1.22rem;
   color: #cbd5e1;
   margin-bottom: 34px;
@@ -120,33 +168,11 @@ h1 {
   background: rgba(15, 23, 42, 0.2);
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 52px;
-  max-width: 920px;
-}
-
-.hero-stats div {
-  background: rgba(30, 41, 59, 0.72);
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.hero-stats span {
-  display: block;
-  color: #ffffff;
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 900;
-  margin-bottom: 8px;
-}
-
-.hero-stats p {
-  color: #cbd5e1;
-  font-size: 0.96rem;
+.btn:hover,
+.contact-links a:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+  border-color: rgba(147, 197, 253, 0.5);
 }
 
 .section {
@@ -161,9 +187,15 @@ h1 {
 }
 
 .section > p,
-.two-column p {
+.two-column p,
+.section-intro {
   color: #cbd5e1;
   font-size: 1.06rem;
+}
+
+.section-intro {
+  max-width: 900px;
+  margin-bottom: 26px;
 }
 
 .two-column {
@@ -177,6 +209,16 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+}
+
+.category-grid {
+  margin-bottom: 44px;
+}
+
+.category-title {
+  margin: 34px 0 18px;
+  color: #ffffff;
+  font-size: 1.35rem;
 }
 
 .card,
@@ -263,26 +305,15 @@ h1 {
 
 .contact-links {
   margin-top: 24px;
-  margin-bottom: 24px;
 }
 
-.contact a {
+.contact-details {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+.contact-details a {
   color: #bfdbfe;
-}
-
-.contact-links a {
-  color: #e5e7eb;
-}
-
-.contact-links a:hover,
-.btn:hover {
-  transform: translateY(-2px);
-  transition: 0.2s ease;
-}
-
-.card:hover,
-.skills > div:hover {
-  border-color: rgba(147, 197, 253, 0.36);
 }
 
 footer {
@@ -292,12 +323,12 @@ footer {
   border-top: 1px solid rgba(148, 163, 184, 0.18);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .nav {
     align-items: flex-start;
     gap: 18px;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 56px;
   }
 
   .nav-links {
@@ -305,10 +336,29 @@ footer {
     gap: 14px;
   }
 
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: min(72vw, 300px);
+    height: min(86vw, 390px);
+    border-radius: 28px;
+  }
+
+  .profile-photo img {
+    object-position: 68% 12%;
+  }
+
   .grid,
   .skills,
-  .two-column,
-  .hero-stats {
+  .two-column {
     grid-template-columns: 1fr;
   }
 
@@ -317,14 +367,6 @@ footer {
   }
 
   .hero {
-    padding: 24px 6% 60px;
-  }
-
-  h1 {
-    font-size: clamp(2.4rem, 12vw, 4.2rem);
-  }
-
-  .subtitle {
-    font-size: 1.08rem;
+    padding: 24px 6% 64px;
   }
 }
