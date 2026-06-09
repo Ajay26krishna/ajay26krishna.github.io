@@ -24,6 +24,10 @@ p + p {
   margin-top: 12px;
 }
 
+/* =======================
+   HERO / TOP SECTION
+======================= */
+
 .hero {
   min-height: 92vh;
   padding: 28px 8% 72px;
@@ -39,63 +43,67 @@ p + p {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   position: relative;
   z-index: 5;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 22px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
 }
 
 .hero-content {
   max-width: 1180px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-layout {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: minmax(0, 1.25fr) 360px;
   align-items: center;
-  gap: 60px;
+  gap: 64px;
 }
 
 .hero-text {
   max-width: 760px;
+  min-width: 0;
+  position: relative;
+  z-index: 3;
 }
 
-.hero-image {
+.hero-visual {
+  justify-self: end;
+  align-self: center;
   width: 360px;
   height: 460px;
-  justify-self: end;
-  border-radius: 34px;
-  overflow: hidden;
-  border: 1px solid rgba(147, 197, 253, 0.3);
-  box-shadow: 0 34px 90px rgba(2, 6, 23, 0.45);
-  background: rgba(30, 41, 59, 0.82);
+  position: relative;
+  z-index: 2;
 }
 
-.hero-image img {
+.profile-photo {
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: 62% 18%;
-}
-
-@media (max-width: 900px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-image {
-    order: -1;
-    justify-self: start;
-    width: 240px;
-    height: 310px;
-  }
-}
-.profile-photo {
-  width: clamp(260px, 29vw, 390px);
-  height: clamp(340px, 38vw, 500px);
-  border-radius: 36px;
+  border-radius: 34px;
   overflow: hidden;
-  position: relative;
   background: rgba(30, 41, 59, 0.82);
-  border: 1px solid rgba(147, 197, 253, 0.28);
+  border: 1px solid rgba(147, 197, 253, 0.3);
   box-shadow: 0 34px 90px rgba(2, 6, 23, 0.45);
 }
 
@@ -104,7 +112,7 @@ p + p {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 68% 16%;
+  object-position: 62% 16%;
 }
 
 .eyebrow,
@@ -170,6 +178,10 @@ h1 {
   transition: 0.2s ease;
   border-color: rgba(147, 197, 253, 0.5);
 }
+
+/* =======================
+   GENERAL SECTIONS
+======================= */
 
 .section {
   padding: 78px 8%;
@@ -269,6 +281,10 @@ h1 {
   font-size: 0.98rem;
 }
 
+/* =======================
+   TIMELINE / EXPERIENCE
+======================= */
+
 .timeline {
   display: grid;
   gap: 22px;
@@ -289,11 +305,19 @@ h1 {
   font-weight: 800;
 }
 
+/* =======================
+   SKILLS
+======================= */
+
 .skills {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
+
+/* =======================
+   CONTACT / FOOTER
+======================= */
 
 .contact {
   text-align: left;
@@ -319,7 +343,27 @@ footer {
   border-top: 1px solid rgba(148, 163, 184, 0.18);
 }
 
-@media (max-width: 760px) {
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width: 1000px) {
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 40px;
+  }
+
+  .hero-visual {
+    width: 300px;
+    height: 390px;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+  }
+}
+
+@media (max-width: 800px) {
   .nav {
     align-items: flex-start;
     gap: 18px;
@@ -338,18 +382,18 @@ footer {
   }
 
   .hero-visual {
-    justify-content: flex-start;
     order: -1;
+    justify-self: start;
+    width: 240px;
+    height: 310px;
   }
 
   .profile-photo {
-    width: min(72vw, 300px);
-    height: min(86vw, 390px);
     border-radius: 28px;
   }
 
   .profile-photo img {
-    object-position: 68% 12%;
+    object-position: 62% 14%;
   }
 
   .grid,
