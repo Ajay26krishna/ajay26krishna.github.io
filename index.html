@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ajay Krishna Devulapally | AI/ML, Systems & Optimization Portfolio</title>
+  <title>Ajay Krishna Devulapally | AI/ML Engineer, SWE & Systems Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Ajay Krishna Devulapally, M.S. Computer Science student at Penn State and Research Assistant in the Microsystems Design Lab working on AI/ML, reinforcement learning, chiplet placement, systems software, computer vision, and optimization."
+    content="Portfolio of Ajay Krishna Devulapally, M.S. Computer Science student at Penn State and Research Assistant working on AI/ML engineering, software engineering, systems, reinforcement learning, chiplet placement, computer vision, and optimization."
   />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header id="top" class="hero">
     <nav class="nav">
       <a class="logo" href="#top" aria-label="Ajay Krishna Devulapally home">Ajay Krishna Devulapally</a>
       <div class="nav-links">
@@ -26,13 +26,24 @@
       </div>
     </nav>
 
-    <section id="top" class="hero-content">
-      <p class="eyebrow">M.S. Computer Science @ Penn State · Research Assistant @ Microsystems Design Lab</p>
-      <h1>AI/ML, Systems, and Optimization Engineer</h1>
+    <section class="hero-content">
+      <div class="hero-intro">
+        <div class="profile-photo" aria-label="Profile photo placeholder">
+          <!-- Add your image as profile.jpg in the same folder. The initials stay as fallback. -->
+          <img src="profile.jpg" alt="Ajay Krishna Devulapally" onerror="this.style.display='none'" />
+          <span>AK</span>
+        </div>
+
+        <div>
+          <p class="eyebrow">AI/ML Engineer · Software Engineer · Systems Engineer</p>
+          <h1>Building AI/ML systems, software, and optimization workflows.</h1>
+        </div>
+      </div>
+
       <p class="subtitle">
-        I build AI/ML and systems-focused solutions across reinforcement learning, chiplet placement,
-        graph optimization, computer vision, operating systems, computer architecture, and hardware-aware
-        performance analysis.
+        I build AI/ML and systems-focused solutions across reinforcement learning, computer vision,
+        graph optimization, backend/cloud prototypes, operating systems, computer architecture, and
+        semiconductor systems research.
       </p>
 
       <div class="hero-buttons">
@@ -40,21 +51,6 @@
         <a href="#research" class="btn secondary">Research Work</a>
         <a href="Ajay_Krishna_Devulapally_Resume.pdf" class="btn secondary" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-
-      <div class="hero-stats" aria-label="Portfolio highlights">
-        <div>
-          <span>27%</span>
-          <p>wirelength reduction in RL chiplet placement</p>
-        </div>
-        <div>
-          <span>58×</span>
-          <p>faster time to solution vs. simulated annealing</p>
-        </div>
-        <div>
-          <span>500+</span>
-          <p>coding problems solved across platforms</p>
-        </div>
       </div>
     </section>
   </header>
@@ -67,29 +63,32 @@
         <div>
           <p>
             I am an M.S. Computer Science student at The Pennsylvania State University and a Research
-            Assistant in the Microsystems Design Lab. My research focuses on AI/ML-driven optimization,
-            reinforcement learning, chiplet placement, graph-based methods, and systems-level performance
-            analysis.
+            Assistant in the Microsystems Design Lab. My work focuses on AI/ML-driven optimization,
+            reinforcement learning, chiplet placement, graph-based methods, simulation-driven evaluation,
+            and systems-level performance analysis.
           </p>
           <p>
-            My background combines machine learning, software engineering, operating systems, computer
-            architecture, and applied optimization. I enjoy building practical systems that connect models,
-            simulations, evaluation pipelines, and real engineering constraints.
+            My profile sits at the intersection of AI/ML engineering, software engineering, and systems.
+            I enjoy building practical workflows where models, code, experiments, metrics, and real
+            engineering constraints come together. My experience includes Python/PyTorch ML pipelines,
+            C/C++ systems projects, backend/cloud prototypes, operating systems, computer vision, and
+            hardware-aware performance studies.
           </p>
           <p>
-            I am currently seeking full-time opportunities in AI/ML Engineering, Software Engineering,
-            ML Systems, Applied AI, and semiconductor/EDA-focused AI roles after my expected graduation
-            in August 2026.
+            I am seeking full-time opportunities in AI/ML Engineering, Software Engineering, ML Systems,
+            Applied AI, and semiconductor/systems-focused AI roles after my expected graduation in
+            August 2026.
           </p>
         </div>
-        <div class="card quick-info">
+
+        <aside class="card quick-info">
           <h3>Quick Info</h3>
           <p><strong>Location:</strong> State College, Pennsylvania</p>
           <p><strong>Education:</strong> M.S. Computer Science, Penn State</p>
           <p><strong>Research Lab:</strong> Microsystems Design Lab, Penn State</p>
           <p><strong>Advisor:</strong> Prof. Vijaykrishnan Narayanan</p>
-          <p><strong>Interests:</strong> AI/ML, RL, ML systems, EDA, systems software, optimization</p>
-        </div>
+          <p><strong>Focus Areas:</strong> AI/ML engineering, software engineering, systems, reinforcement learning, computer vision, optimization</p>
+        </aside>
       </div>
     </section>
 
@@ -103,9 +102,9 @@
           <h3>The Pennsylvania State University</h3>
           <p class="meta">M.S. in Computer Science, Thesis Track · University Park, PA</p>
           <p>
-            Graduate study focused on machine learning, graph mining, operating systems, algorithm
-            analysis, computer architecture, and computer vision. Research work is centered on AI/ML
-            methods for optimization and hardware-aware systems.
+            Graduate coursework and research focused on machine learning, graph mining, operating systems,
+            algorithm analysis, computer architecture, computer vision, AI/ML optimization, and systems-level
+            experimentation.
           </p>
         </article>
 
@@ -114,17 +113,17 @@
           <h3>CVR College of Engineering</h3>
           <p class="meta">B.Tech. in Computer Science and Engineering · Hyderabad, India</p>
           <p>
-            Coursework and projects covered data structures, algorithms, artificial intelligence, deep
-            learning, DBMS, software engineering, web technologies, Linux programming, computer networks,
-            compiler design, and computer vision.
+            Coursework and projects covered data structures, algorithms, artificial intelligence, deep learning,
+            DBMS, software engineering, web technologies, Linux programming, computer networks, compiler design,
+            computer architecture, and computer vision.
           </p>
         </article>
       </div>
     </section>
 
     <section id="experience" class="section">
-      <p class="section-kicker">Work Experience</p>
-      <h2>Experience</h2>
+      <p class="section-kicker">Experience</p>
+      <h2>Work Experience</h2>
 
       <div class="timeline">
         <article class="timeline-item card wide">
@@ -132,15 +131,15 @@
           <h3>Research Assistant — Microsystems Design Lab, Penn State</h3>
           <p class="meta">University Park, PA · SRC-supported research · Advisor: Prof. Vijaykrishnan Narayanan</p>
           <p>
-            I conduct research on AI/ML-driven optimization for microsystems and combinatorial design
-            problems. My work includes reinforcement learning, imitation learning, simulation-driven
-            evaluation, routing optimization, benchmarking, and model behavior analysis.
+            I conduct SRC-supported research on AI/ML-driven optimization for microsystems and combinatorial
+            design problems. My work includes reinforcement learning, imitation learning, simulation-driven
+            evaluation, routing-aware optimization, benchmarking, and model behavior analysis.
           </p>
           <ul class="card-list">
-            <li>Built Python/PyTorch workflows connecting ML models with simulation tools, routing-aware optimization, and metric-driven analysis.</li>
+            <li>Built Python/PyTorch workflows connecting ML models with simulation tools, optimization pipelines, and metric-driven analysis.</li>
             <li>Designed automated experiment pipelines for feasibility checking, thermal evaluation, wirelength measurement, runtime analysis, and solution-quality comparison.</li>
-            <li>Analyze model failure modes, constraint violations, generalization behavior, and trade-offs across industrial-scale benchmark environments.</li>
-            <li>Prepare technical reports, presentations, research summaries, and documentation for ongoing AI/ML optimization work.</li>
+            <li>Analyzed model failure modes, constraint violations, generalization behavior, and design trade-offs across industrial-scale benchmark environments.</li>
+            <li>Prepared technical reports, research summaries, presentations, and documentation for AI/ML optimization workflows.</li>
           </ul>
         </article>
 
@@ -149,9 +148,9 @@
           <h3>AI Intern — Smartknower</h3>
           <p class="meta">Bangalore, India</p>
           <p>
-            Built ANN-based and transfer-learning image classification models, achieving 98.3% accuracy
-            on MNIST. Developed preprocessing, validation, model evaluation, and deployment workflows
-            using Python, OpenCV, Pandas, and Streamlit.
+            Built ANN-based and transfer-learning image classification models, achieving 98.3% accuracy on
+            MNIST. Developed preprocessing, validation, model evaluation, and deployment workflows using
+            Python, OpenCV, Pandas, and Streamlit.
           </p>
           <ul class="card-list">
             <li>Implemented deep learning pipelines for image classification and model evaluation.</li>
@@ -163,188 +162,100 @@
     </section>
 
     <section id="research" class="section">
-      <p class="section-kicker">Research Focus</p>
-      <h2>Research</h2>
+      <p class="section-kicker">Research</p>
+      <h2>Research Work</h2>
+      <p class="section-intro">
+        My research is focused on AI/ML methods for optimization and systems problems. I currently highlight
+        two main research directions: reinforcement learning for 2.5D chiplet placement and oscillator-based
+        Ising-machine optimization.
+      </p>
 
       <div class="grid">
         <article class="card">
           <h3>TWARLeT-2.5D — First-Author Research Project</h3>
           <p class="meta">Reinforcement Learning for 2.5D Chiplet Placement</p>
           <p>
-            Designed an end-to-end reinforcement-learning framework for thermally aware 2.5D chiplet
-            placement. The system uses imitation learning, PPO, placement constraints, MILP-based routing,
-            and thermal simulation to explore chiplet layouts under realistic engineering trade-offs.
+            Designed an end-to-end reinforcement-learning framework for thermally aware 2.5D chiplet placement.
+            The system uses imitation learning, PPO, placement constraints, MILP-based routing, and thermal
+            simulation to explore layouts under realistic engineering trade-offs.
           </p>
           <p>
-            Developed automated evaluation pipelines across industrial-scale benchmarks, reducing
-            wirelength by up to 27% and achieving 58× faster time to solution than simulated annealing.
-            The work focuses on fast design-space exploration for heterogeneous chiplet systems.
+            Built automated evaluation pipelines across industrial-scale benchmarks, reducing wirelength by up to
+            27% and achieving 58× faster time to solution than simulated annealing. The work focuses on faster
+            design-space exploration for heterogeneous chiplet systems.
           </p>
-          <p class="tags">Reinforcement Learning · Imitation Learning · PPO · HotSpot · TAP-2.5D · MILP · Thermal Optimization</p>
+          <p class="tags">Reinforcement Learning · Imitation Learning · PPO · Python · PyTorch · Thermal Simulation · MILP · Optimization</p>
         </article>
 
         <article class="card">
           <h3>Oscillator-Based Ising Optimization</h3>
           <p class="meta">Combinatorial Optimization and Max-Cut-style Problems</p>
           <p>
-            Building oscillator-based Ising-machine optimization workflows for graph-based combinatorial
-            problems. The work studies how oscillator dynamics, staged parameter schedules, and graph
-            structure affect solution quality and convergence behavior.
+            Building oscillator-based Ising-machine optimization workflows for graph-based combinatorial problems.
+            The work studies how oscillator dynamics, staged parameter schedules, and graph structure affect
+            solution quality and convergence behavior.
           </p>
           <p>
-            Evaluation focuses on convergence stability, final cut quality, graph size effects, runtime,
-            and repeatability across experimental trials. The implementation uses systems-oriented C++
-            workflows with parallel computing concepts.
+            Evaluation focuses on convergence stability, final cut quality, graph size effects, runtime, and
+            repeatability across experimental trials. The implementation uses systems-oriented C++ workflows and
+            parallel computing concepts.
           </p>
           <p class="tags">C++ · MPI · OpenMP · Ising Models · Max-Cut · Graph Optimization · Parallel Computing</p>
-        </article>
-
-        <article class="card">
-          <h3>GNN Freeze-Mask Optimization</h3>
-          <p class="meta">Graph Neural Networks for Runtime Reduction</p>
-          <p>
-            Working on graph neural network methods to predict stable nodes in combinatorial optimization
-            workflows. The goal is to reduce runtime by freezing reliable node decisions while preserving
-            final solution quality on hard graph instances.
-          </p>
-          <p>
-            Built graph-level and node-level data collection workflows for Gset graph experiments, with
-            evaluation centered on cut preservation, runtime reduction, stable-node selection, and unseen
-            graph generalization.
-          </p>
-          <p class="tags">GNN · PyTorch · Graph Mining · Stable Node Prediction · Optimization · Benchmarking</p>
-        </article>
-
-        <article class="card">
-          <h3>Hardware-Aware AI and Design-Space Exploration</h3>
-          <p class="meta">AI Methods for Hardware and Architecture Problems</p>
-          <p>
-            My broader research interest is in using AI/ML systems to speed up difficult design-space
-            exploration problems in computing systems. This includes reinforcement learning, graph-based
-            learning, simulation-driven evaluation, and hardware-aware optimization.
-          </p>
-          <p>
-            I am especially interested in ML systems that are not only accurate, but also constrained,
-            measurable, reproducible, and useful for real engineering workflows.
-          </p>
-          <p class="tags">AI for Systems · ML Systems · Hardware-Aware AI · EDA · Computer Architecture</p>
         </article>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <p class="section-kicker">Selected Work</p>
-      <h2>Featured Projects</h2>
+      <p class="section-kicker">Projects</p>
+      <h2>Selected Projects</h2>
+      <p class="section-intro">
+        I group my projects by the roles I am targeting: AI/ML Engineering, Software Engineering, and Systems.
+        This keeps each project aligned with the skills it demonstrates.
+      </p>
 
-      <div class="grid">
+      <h3 class="category-title">AI/ML Engineering Projects</h3>
+      <div class="grid category-grid">
         <article class="card">
           <h3>RL-Based 2.5D Chiplet Placement</h3>
           <p>
-            Developed a reinforcement learning framework for thermal- and wirelength-aware chiplet
-            placement using placement constraints, thermal simulation, and routing-aware evaluation.
+            Developed a reinforcement learning framework for thermal- and wirelength-aware chiplet placement using
+            placement constraints, thermal simulation, action masking, and routing-aware evaluation.
           </p>
           <p>
-            The environment models chiplet dimensions, power, connectivity, feasible placements,
-            orientation choices, and action masking. The policy uses graph-based features and PPO-style
-            optimization to generate layouts under design constraints.
+            The environment models chiplet dimensions, power, connectivity, feasible placements, orientation choices,
+            and graph-based state features. The policy uses PPO-style optimization to generate feasible layouts under
+            system constraints.
           </p>
           <p>
-            Built evaluation around peak temperature, wirelength, feasibility, runtime, and comparison
-            against simulated annealing and optimization-based baselines.
+            Built evaluation around peak temperature, wirelength, feasibility, runtime, and comparison against simulated
+            annealing and optimization-based baselines.
           </p>
-          <p class="tags">Python · PyTorch · RL · PPO · Imitation Learning · HotSpot · TAP-2.5D · MILP</p>
+          <p class="tags">Python · PyTorch · Reinforcement Learning · PPO · Imitation Learning · Simulation · Optimization</p>
         </article>
 
         <article class="card">
-          <h3>Cloud-Native Data Service Prototype</h3>
+          <h3>GNN Freeze-Mask Optimization</h3>
           <p>
-            Designed a backend data service prototype with REST API endpoints, request validation,
-            SQL-backed metadata storage, structured logging, and modular service layers for maintainable
-            development.
+            Worked on graph neural network methods to predict stable nodes in combinatorial optimization workflows.
+            The goal is to reduce runtime by freezing reliable node decisions while preserving final solution quality.
           </p>
           <p>
-            Mapped deployment architecture to AWS S3, RDS/DynamoDB, Lambda, API Gateway, EC2, CloudWatch,
-            and IAM concepts, with Docker and GitHub Actions for CI/CD-oriented delivery.
+            Designed graph-level and node-level data collection workflows for Gset graph experiments, with evaluation
+            centered on cut preservation, runtime reduction, stable-node selection, and unseen graph generalization.
           </p>
-          <p class="tags">Python · REST APIs · AWS · SQL · Docker · GitHub Actions · Backend Engineering</p>
+          <p class="tags">GNN · PyTorch · Graph Mining · Stable Node Prediction · Optimization · Benchmarking</p>
         </article>
 
         <article class="card">
-          <h3>GenAI RAG Document Intelligence Prototype</h3>
+          <h3>3D Human Pose Forecasting using SMPL &amp; VPoser</h3>
           <p>
-            Built an LLM-powered RAG prototype for technical document analysis using embedding search,
-            context retrieval, prompt engineering, structured extraction, and answer-quality evaluation.
+            Built GRU- and Transformer-based deep learning models to forecast 3D human motion sequences from latent
+            pose representations. The project focused on sequence modeling, future-state prediction, and evaluation of
+            generated body motion.
           </p>
           <p>
-            Designed reusable evaluation and documentation templates for model behavior, limitations,
-            retrieved evidence quality, structured outputs, and deployment-readiness review.
-          </p>
-          <p class="tags">Python · LLMs · RAG · Embeddings · Vector Search · Prompt Engineering · Evaluation</p>
-        </article>
-
-        <article class="card">
-          <h3>Simulation AI Plugin Prototype</h3>
-          <p>
-            Designed a prototype AI assistant for simulation workflows with structured inputs,
-            prompt-engineered LLM outputs, experiment summaries, model recommendations, and reproducible
-            technical documentation.
-          </p>
-          <p>
-            Mapped the architecture to modular API services, Git-based version control, request validation,
-            logging, evaluation checks, and cloud microservice deployment concepts.
-          </p>
-          <p class="tags">Python · PyTorch · LLMs · APIs · Simulation · Git · Technical Documentation</p>
-        </article>
-
-        <article class="card">
-          <h3>Preemptive Thread Scheduler</h3>
-          <p>
-            Built a tick-accurate scheduler in C implementing FCFS, SRTF, and MLFQ with preemption,
-            I/O blocking, priority boosting, deterministic state transitions, and queue management.
-          </p>
-          <p>
-            Validated scheduler behavior against canonical Gantt traces and debugged edge cases involving
-            blocking, preemption, tie-breaking, workload transitions, and scheduling correctness.
-          </p>
-          <p class="tags">C · Linux · Operating Systems · Scheduling · Multithreading · Debugging</p>
-        </article>
-
-        <article class="card">
-          <h3>Buddy and Slab Memory Allocator</h3>
-          <p>
-            Implemented a custom memory allocator using buddy allocation and slab allocation with chunk
-            splitting, coalescing, free-list management, metadata headers, and deterministic address
-            selection.
-          </p>
-          <p>
-            Built my_malloc and my_free interfaces with correctness-focused tests for allocation,
-            deallocation, merging, small-object reuse, fragmentation behavior, and edge-case handling.
-          </p>
-          <p class="tags">C · Memory Management · Operating Systems · Data Structures · Low-Level Debugging</p>
-        </article>
-
-        <article class="card">
-          <h3>Hardware-Aware Optimization of Systolic Arrays</h3>
-          <p>
-            Simulated ResNet18 and MobileNet workloads on systolic-array accelerator configurations using
-            ScaleSim. Analyzed weight-stationary, input-stationary, and output-stationary dataflows.
-          </p>
-          <p>
-            Studied utilization, inference efficiency, memory movement, architecture-level trade-offs,
-            and hardware-aware AI acceleration behavior.
-          </p>
-          <p class="tags">ScaleSim · Computer Architecture · CNNs · ResNet18 · MobileNet · Systolic Arrays</p>
-        </article>
-
-        <article class="card">
-          <h3>3D Human Pose Forecasting using SMPL & VPoser</h3>
-          <p>
-            Built GRU- and Transformer-based deep learning models to forecast 3D human motion sequences
-            from latent pose representations using SMPL and VPoser-style pose modeling.
-          </p>
-          <p>
-            Evaluated prediction quality using MPJPE, PA-MPJPE, and MPVPE metrics, with focus on
-            sequence modeling, motion forecasting, representation learning, and deep learning evaluation.
+            Evaluated prediction quality using MPJPE, PA-MPJPE, and MPVPE metrics, strengthening my experience with
+            computer vision, motion forecasting, representation learning, and deep learning evaluation.
           </p>
           <p class="tags">Python · PyTorch · Transformers · GRU · SMPL · VPoser · Computer Vision</p>
         </article>
@@ -352,60 +263,131 @@
         <article class="card">
           <h3>Skin Cancer Detection using Hybrid Deep Learning</h3>
           <p>
-            Built a hybrid deep learning image classification system using VGG16, ResNet, and CapsNet-style
-            modeling approaches for medical image classification.
+            Built a hybrid deep learning image classification system using VGG16, ResNet, and CapsNet-style modeling
+            approaches for medical image classification.
           </p>
           <p>
-            Applied preprocessing, model training, ensemble-style prediction, and evaluation workflows,
-            achieving 90.625% classification accuracy.
+            Applied preprocessing, model training, ensemble-style prediction, and evaluation workflows, achieving
+            90.625% classification accuracy in the project setting.
           </p>
-          <p class="tags">Python · CNNs · VGG16 · ResNet · CapsNet · Medical Imaging · Classification</p>
+          <p class="tags">Python · CNNs · VGG16 · ResNet · CapsNet · Medical Image Classification</p>
         </article>
 
         <article class="card">
           <h3>DDoS Attack Classification using Machine Learning</h3>
           <p>
-            Developed machine learning models for DDoS attack classification using KNN, Gaussian Naive
-            Bayes, and Random Forest baselines.
+            Developed machine learning models for DDoS attack classification using KNN, Gaussian Naive Bayes, and
+            Random Forest. The project focused on network-security classification using traditional ML pipelines.
           </p>
           <p>
-            Compared model performance across traditional ML baselines, achieving strong accuracy results
-            and strengthening experience with network-security data analysis and classification workflows.
+            Compared model performance across multiple baselines and evaluation metrics, achieving strong accuracy
+            results while strengthening experience with data preprocessing, model comparison, and classification.
           </p>
-          <p class="tags">Python · Scikit-learn · Random Forest · KNN · Network Security · ML</p>
+          <p class="tags">Python · Scikit-learn · Random Forest · KNN · Naive Bayes · Network Security</p>
         </article>
 
         <article class="card">
-          <h3>Open-World Survival Game Prototype</h3>
+          <h3>AI Internship Image Classification Work</h3>
           <p>
-            Built a Unity-based 3D game prototype with player movement, camera control, object behavior
-            scripting, scene interaction, and basic gameplay mechanics.
+            Built ANN and transfer-learning image classification workflows during my AI internship at Smartknower.
+            The work included preprocessing, model training, validation, evaluation, and deployment-oriented demos.
           </p>
           <p>
-            This project strengthened early software engineering experience in event-driven programming,
-            interactive systems, scene design, and debugging behavior in a real-time environment.
+            Achieved 98.3% accuracy on MNIST and used Streamlit, OpenCV, Pandas, and TensorFlow/Keras to create
+            practical ML demonstrations.
           </p>
-          <p class="tags">Unity · C# Concepts · 3D Interaction · Game Prototype · Real-Time Systems</p>
+          <p class="tags">Python · TensorFlow · Keras · OpenCV · Pandas · Streamlit · Image Classification</p>
+        </article>
+      </div>
+
+      <h3 class="category-title">Software Engineering Projects</h3>
+      <div class="grid category-grid">
+        <article class="card">
+          <h3>Cloud-Native Data Service Prototype</h3>
+          <p>
+            Designed a backend data service prototype with REST API endpoints, request validation, SQL-backed metadata
+            storage, structured logging, and modular service layers for maintainable software development.
+          </p>
+          <p>
+            Mapped deployment architecture to AWS S3, RDS/DynamoDB, Lambda, API Gateway, EC2, CloudWatch, and IAM
+            concepts, with Docker and GitHub Actions for CI/CD-oriented delivery.
+          </p>
+          <p class="tags">Python · REST APIs · SQL · AWS Concepts · Docker · GitHub Actions · Backend Design</p>
         </article>
 
         <article class="card">
-          <h3>Full-Stack AI Application Prototype</h3>
+          <h3>Full-Stack AI Document Assistant Prototype</h3>
           <p>
-            Designed a prototype full-stack AI application with a Python backend, document upload flow,
-            structured model outputs, and frontend visualization concepts.
+            Built a backend-oriented AI prototype with document upload flow, API-style processing, metadata storage,
+            retrieval-augmented generation concepts, structured outputs, and user-facing result visualization.
           </p>
           <p>
-            Focused on translating AI model outputs into usable application features through backend API
-            design, user-facing result presentation, validation, and modular service structure.
+            The project demonstrates how AI models can be connected with application logic, retrieval workflows,
+            backend APIs, and interface components for practical software products.
           </p>
-          <p class="tags">Python · Flask/FastAPI Concepts · React Concepts · TypeScript · AI Application Design</p>
+          <p class="tags">Python · APIs · RAG Concepts · SQL · JavaScript · HTML · CSS · Application Design</p>
+        </article>
+
+        <article class="card">
+          <h3>Web UI and Frontend Coursework Projects</h3>
+          <p>
+            Built small user-facing web interfaces during coursework to collect input, display results, and connect
+            interface logic with backend or model-driven workflows.
+          </p>
+          <p>
+            Strengthened fundamentals in HTML, CSS, JavaScript, TypeScript, React concepts, form handling, and turning
+            technical project outputs into usable interfaces.
+          </p>
+          <p class="tags">HTML · CSS · JavaScript · TypeScript · React Concepts · UI Development</p>
+        </article>
+      </div>
+
+      <h3 class="category-title">Systems and Computer Architecture Projects</h3>
+      <div class="grid category-grid">
+        <article class="card">
+          <h3>Preemptive Thread Scheduler</h3>
+          <p>
+            Built a tick-accurate scheduler in C implementing FCFS, SRTF, and MLFQ with preemption, I/O blocking,
+            priority boosting, deterministic state transitions, and queue management.
+          </p>
+          <p>
+            Validated scheduler behavior against canonical Gantt traces and debugged edge cases involving blocking,
+            preemption, tie-breaking, workload transitions, synchronization, and deterministic execution.
+          </p>
+          <p class="tags">C · Linux · Operating Systems · Scheduling · Multithreading · Debugging</p>
+        </article>
+
+        <article class="card">
+          <h3>Buddy and Slab Memory Allocator</h3>
+          <p>
+            Implemented a custom memory allocator using buddy allocation and slab allocation with chunk splitting,
+            coalescing, free-list management, metadata headers, and deterministic address selection.
+          </p>
+          <p>
+            Built my_malloc and my_free interfaces with correctness-focused tests for allocation, deallocation,
+            merging, small-object reuse, fragmentation behavior, and pointer-level memory management.
+          </p>
+          <p class="tags">C · Memory Management · Operating Systems · Data Structures · Debugging</p>
+        </article>
+
+        <article class="card">
+          <h3>Hardware-Aware Optimization of Systolic Arrays</h3>
+          <p>
+            Simulated ResNet18 and MobileNet workloads on systolic-array accelerator configurations using ScaleSim.
+            Analyzed weight-stationary, input-stationary, and output-stationary dataflows for inference efficiency.
+          </p>
+          <p>
+            Studied utilization, performance trade-offs, data movement, and architecture-level behavior for ML
+            acceleration workloads.
+          </p>
+          <p class="tags">ScaleSim · Computer Architecture · CNNs · ResNet18 · MobileNet · ML Accelerators</p>
         </article>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <p class="section-kicker">Technical Toolkit</p>
-      <h2>Skills</h2>
+      <p class="section-kicker">Skills</p>
+      <h2>Technical Skills</h2>
 
       <div class="skills">
         <div>
@@ -414,18 +396,18 @@
         </div>
 
         <div>
-          <h3>AI / ML</h3>
+          <h3>AI / ML Engineering</h3>
           <p>
             PyTorch, TensorFlow, Keras, Scikit-learn, Reinforcement Learning, PPO, Imitation Learning,
-            GNNs, Transformers, Deep Learning, Computer Vision, Classical ML
+            GNNs, Transformers, Deep Learning, Computer Vision, Model Evaluation
           </p>
         </div>
 
         <div>
-          <h3>Generative AI</h3>
+          <h3>Software Engineering</h3>
           <p>
-            LLMs, RAG, embeddings, vector search, prompt engineering, context engineering, structured
-            outputs, AI agents, tool-calling concepts, model evaluation
+            REST API concepts, backend prototyping, data pipelines, SQL-backed services, Git, CI/CD concepts,
+            technical documentation, Agile/Scrum concepts, Streamlit
           </p>
         </div>
 
@@ -433,39 +415,23 @@
           <h3>Systems</h3>
           <p>
             Linux, Operating Systems, Multithreading, Scheduling, Memory Management, Debugging,
-            Benchmarking, Performance Modeling, Distributed Systems Concepts
+            Benchmarking, Performance Modeling, Data Structures, Algorithms
           </p>
         </div>
 
         <div>
-          <h3>Architecture / EDA</h3>
+          <h3>Cloud / Data</h3>
           <p>
-            HotSpot, TAP-2.5D, MILP, ScaleSim, Computer Architecture, Chiplet Systems, Hardware-Aware AI,
-            Systolic Arrays, Thermal Evaluation
+            AWS S3, EC2, Lambda, RDS, DynamoDB, API Gateway, CloudWatch and IAM concepts, Docker,
+            GitHub Actions, NumPy, Pandas, SQL, Data Processing
           </p>
         </div>
 
         <div>
-          <h3>Backend / Cloud</h3>
+          <h3>Computer Architecture</h3>
           <p>
-            REST API concepts, backend prototyping, data pipelines, AWS S3/RDS/DynamoDB/Lambda/API Gateway
-            concepts, Docker, GitHub Actions, CI/CD concepts
-          </p>
-        </div>
-
-        <div>
-          <h3>Software Engineering</h3>
-          <p>
-            Git, modular design, technical documentation, code review concepts, Agile/Scrum concepts,
-            testing, validation, reproducible experimentation
-          </p>
-        </div>
-
-        <div>
-          <h3>Data / Tools</h3>
-          <p>
-            NumPy, Pandas, OpenCV, Matplotlib, Streamlit, Tableau concepts, SQL, ScaleSim, VS Code,
-            model evaluation, metric-driven analysis
+            ScaleSim, systolic arrays, accelerator dataflows, computer architecture, chiplet systems,
+            hardware-aware performance analysis, simulation-driven evaluation
           </p>
         </div>
       </div>
@@ -479,85 +445,43 @@
           <h3>Graduate Coursework</h3>
           <p>
             Machine Learning, Graph Mining, Operating Systems, Algorithm Analysis, Fundamental Computer
-            Architecture, Computer Vision II, Reinforcement Learning, Deep Learning.
+            Architecture, Computer Vision, Reinforcement Learning, Deep Learning.
           </p>
         </article>
         <article class="card">
           <h3>Undergraduate Coursework</h3>
           <p>
-            Data Structures, Advanced Data Structures through Java, Algorithms Design and Analysis,
-            Artificial Intelligence, Deep Learning, DBMS, Compiler Design, Linux Programming, Software
-            Engineering, Computer Networks, Web Technologies, HCI, Data Warehousing and Data Mining.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="achievements" class="section">
-      <p class="section-kicker">Highlights</p>
-      <h2>Achievements & Certifications</h2>
-
-      <div class="grid">
-        <article class="card">
-          <h3>500+ Coding Problems</h3>
-          <p>
-            Solved 500+ programming problems across platforms including Codeforces, LeetCode, and
-            HackerRank, strengthening data structures, algorithms, and problem-solving fundamentals.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Project Expo 2023</h3>
-          <p>
-            Presented a major deep learning project at Project Expo 2023 at CVR College of Engineering,
-            demonstrating applied AI and model-building work.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Artificial Intelligence Certification</h3>
-          <p>
-            Completed Artificial Intelligence certification through Smartknower in 2021, covering neural
-            networks, image classification, preprocessing, and applied AI workflows.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Oracle SQL Certification</h3>
-          <p>
-            Completed Database Programming with SQL certification through Oracle in 2022, strengthening
-            relational database and SQL fundamentals.
+            Data Structures, Algorithms, Artificial Intelligence, Deep Learning, DBMS, Software Engineering,
+            Web Technologies, Linux Programming, Computer Networks, Compiler Design, Computer Architecture.
           </p>
         </article>
       </div>
     </section>
 
     <section id="contact" class="section contact">
-      <p class="section-kicker">Get in Touch</p>
+      <p class="section-kicker">Contact</p>
       <h2>Contact</h2>
       <p>
         I am seeking full-time opportunities in AI/ML Engineering, Software Engineering, ML Systems,
-        Applied AI, and semiconductor/EDA-focused AI roles. I am open to roles involving model development,
-        backend systems, simulation-driven AI, optimization, and hardware-aware machine learning.
+        Applied AI, and semiconductor/systems-focused AI roles.
       </p>
 
       <div class="contact-links">
         <a href="mailto:afd5972@psu.edu">Email</a>
         <a href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="Ajay_Krishna_Devulapally_Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
 
-      <div class="contact-card card wide">
-        <p><strong>Email:</strong> <a href="mailto:afd5972@psu.edu">afd5972@psu.edu</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">github.com/Ajay26krishna</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">linkedin.com/in/ajay-krishna-devulapally</a></p>
-      </div>
+      <p class="contact-details">
+        Email: <a href="mailto:afd5972@psu.edu">afd5972@psu.edu</a><br />
+        GitHub: <a href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">github.com/Ajay26krishna</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">linkedin.com/in/ajay-krishna-devulapally</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Ajay Krishna Devulapally · AI/ML, Systems, and Optimization Portfolio</p>
+    <p>© 2026 Ajay Krishna Devulapally</p>
   </footer>
 </body>
 </html>
