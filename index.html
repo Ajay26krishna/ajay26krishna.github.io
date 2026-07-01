@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07111f" />
 
   <title>Ajay Krishna Devulapally | AI/ML & Software Engineering Portfolio</title>
   <meta
@@ -18,6 +19,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header id="top" class="hero">
     <nav class="nav">
       <a class="logo" href="#top" aria-label="Ajay Krishna Devulapally home">Ajay Krishna Devulapally</a>
@@ -32,13 +34,18 @@
       </div>
     </nav>
 
-    <section class="hero-content">
+    <section class="hero-content" aria-labelledby="hero-title">
       <div class="hero-text">
         <p class="eyebrow">AI/ML Engineer · Software Engineer · Research Assistant</p>
-        <h1>Building practical AI/ML and software systems.</h1>
+        <h1 id="hero-title">Building practical AI/ML and software systems.</h1>
         <p class="subtitle">
           I develop machine-learning workflows, backend prototypes, and systems software across
           deep learning, reinforcement learning, REST APIs, operating systems, and performance-oriented engineering.
+        </p>
+
+        <p class="availability">
+          <span aria-hidden="true"></span>
+          Graduating August 2026 · Open to full-time roles
         </p>
 
         <div class="hero-buttons">
@@ -50,17 +57,18 @@
         </div>
       </div>
 
-      <div class="hero-photo-frame">
-        <img class="hero-photo-img" src="Headshot.jpeg" alt="Ajay Krishna Devulapally" />
+      <div class="hero-photo-frame" aria-hidden="true">
+        <div class="photo-glow"></div>
+        <img class="hero-photo-img" src="Headshot.jpeg" alt="" />
       </div>
     </section>
 
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="about" class="section">
       <p class="section-kicker">Profile</p>
-      <h2>About</h2>
+      <h2>About Me</h2>
       <div class="two-column">
         <div>
           <p>
@@ -121,8 +129,8 @@
     </section>
 
     <section id="experience" class="section">
-      <p class="section-kicker">Experience</p>
-      <h2>Work Experience</h2>
+      <p class="section-kicker">Career</p>
+      <h2>Experience</h2>
 
       <div class="timeline">
         <article class="timeline-item card wide">
@@ -161,8 +169,8 @@
     </section>
 
     <section id="research" class="section">
-      <p class="section-kicker">Research</p>
-      <h2>Research Work</h2>
+      <p class="section-kicker">Selected Research</p>
+      <h2>Research Contributions</h2>
       <p class="section-intro">
         This section describes my contributions within collaborative Penn State research projects.
         The independent projects in the next section are separate and are the primary code samples highlighted on GitHub.
@@ -201,7 +209,7 @@
     </section>
 
     <section id="projects" class="section">
-      <p class="section-kicker">Projects</p>
+      <p class="section-kicker">Portfolio</p>
       <h2>Selected Projects</h2>
       <p class="section-intro">
         These independent and course projects are grouped around the two role families I am targeting:
@@ -314,8 +322,8 @@
     </section>
 
     <section id="skills" class="section">
-      <p class="section-kicker">Skills</p>
-      <h2>Technical Skills</h2>
+      <p class="section-kicker">Technical Toolkit</p>
+      <h2>Skills</h2>
 
       <div class="skills">
         <div>
@@ -366,8 +374,8 @@
     </section>
 
     <section id="coursework" class="section">
-      <p class="section-kicker">Coursework</p>
-      <h2>Relevant Coursework</h2>
+      <p class="section-kicker">Academic Foundation</p>
+      <h2>Coursework</h2>
       <div class="grid">
         <article class="card">
           <h3>Graduate Coursework</h3>
@@ -385,9 +393,10 @@
         </article>
       </div>
     </section>
-        <section id="achievements" class="section">
-      <p class="section-kicker">Certificates & Presentations</p>
-      <h2>Certificates and Presentations</h2>
+
+    <section id="achievements" class="section">
+      <p class="section-kicker">Highlights</p>
+      <h2>Presentations &amp; Certifications</h2>
 
       <div class="grid">
         <article class="card">
@@ -433,29 +442,60 @@
       </div>
     </section>
     <section id="contact" class="section contact">
-      <p class="section-kicker">Contact</p>
-      <h2>Contact</h2>
-      <p>
-        I am seeking full-time opportunities in AI/ML Engineering, Software Engineering, ML Systems,
-        backend development, and systems-focused engineering.
-      </p>
+      <div class="contact-panel">
+        <div>
+          <p class="section-kicker">Get in Touch</p>
+          <h2>Let’s Connect</h2>
+          <p>
+            I am seeking full-time opportunities in AI/ML Engineering, Software Engineering,
+            ML Systems, backend development, and systems-focused engineering.
+          </p>
+        </div>
 
-      <div class="contact-links">
-        <a href="mailto:ajaykrishnadevulapally@gmail.com">Email</a>
-        <a href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:ajaykrishnadevulapally@gmail.com">Email Me</a>
+          <button
+            class="btn secondary"
+            id="copy-email"
+            type="button"
+            data-email="ajaykrishnadevulapally@gmail.com"
+          >
+            Copy Email
+          </button>
+          <a class="btn secondary" href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
       </div>
-
-      <p class="contact-details">
-        Email: <a href="mailto:afd5972@psu.edu">afd5972@psu.edu</a><br />
-        GitHub: <a href="https://github.com/Ajay26krishna" target="_blank" rel="noopener">github.com/Ajay26krishna</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/ajay-krishna-devulapally/" target="_blank" rel="noopener">linkedin.com/in/ajay-krishna-devulapally</a>
-      </p>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Ajay Krishna Devulapally</p>
   </footer>
+  <script>
+    const copyEmailButton = document.getElementById("copy-email");
+    const copyStatus = document.getElementById("copy-status");
+
+    if (copyEmailButton && copyStatus) {
+      copyEmailButton.addEventListener("click", async () => {
+        const email = copyEmailButton.dataset.email;
+
+        try {
+          await navigator.clipboard.writeText(email);
+          copyStatus.textContent = "Email copied to clipboard.";
+          copyEmailButton.textContent = "Copied";
+        } catch (error) {
+          copyStatus.textContent = email;
+        }
+
+        window.setTimeout(() => {
+          copyEmailButton.textContent = "Copy Email";
+          copyStatus.textContent = "";
+        }, 2500);
+      });
+    }
+  </script>
 </body>
 </html>
